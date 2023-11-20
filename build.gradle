@@ -1,0 +1,26 @@
+plugins {
+    id 'application'
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter:5.9.3'
+
+    testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+
+    implementation 'com.google.guava:guava:32.1.1-jre'
+    implementation 'org.json:json:20230227'
+    implementation 'org.shredzone.acme4j:acme4j-utils:2.16'
+    implementation 'org.bouncycastle:bcprov-jdk15on:1.69'
+}
+
+application {
+    mainClass = 'Main'
+}
+
+tasks.named('test') {
+    useJUnitPlatform()
+}
