@@ -1,9 +1,8 @@
-# jwk2pem converter for integration micronaut-acme
+# jwk2pem file converter for integration certBot and micronaut-acme
 
-https://micronaut-projects.github.io/micronaut-acme/latest/guide
+[micronaut-acme](https://micronaut-projects.github.io/micronaut-acme/latest/guide)
 and 
-certBot for LetsEncrypt
-https://certbot.eff.org/
+[certBot](https://certbot.eff.org/) for LetsEncrypt
 
 Problem: certbot generated file formats are different from micronaut-acme.
 
